@@ -1,0 +1,75 @@
+﻿@model List<BacBo.Models.PainelADM>
+
+@{
+    ViewData["Title"] = "Painel";
+}
+
+<style>
+    
+    table th:nth-child(n+2),
+    table td:nth-child(n+2) {
+        padding-left: 30px; /* or whatever spacing you need */
+    }
+
+
+</style>
+
+<h1>Painel</h1>
+
+
+@if (Model != null)
+{
+
+    <h2>Histórico de Apostas</h2>
+
+    
+    <div class="container mt-4">
+    <div class="row">
+    <div id="total" class="col-md-6">
+    <p>Total de apostas: @ViewBag.TotaldeApostas</p>
+    <p>Total de vitórias: @ViewBag.TotaldeVitorias</p>
+    <p>Total de derrotas: @ViewBag.TotaldeDerrotas</p>
+    <p>Total de resultado Player: @ViewBag.TotalPlayer</p>
+    <p>Total de resultado Banker: @ViewBag.TotalBanker</p>
+    <p>Total de resultado Tie: @ViewBag.TotalTie</p>
+    </div>
+
+    <div id="rate" class="col-md-6">
+    <p>Winrate: @ViewBag.Winrate%</p>
+    <p>Lossrate: @ViewBag.Lossrate%</p>
+    <p>Playerrate: @ViewBag.Playerrate%</p>
+    <p>Bankerrate: @ViewBag.Bankerrate%</p>
+    <p>Tierate: @ViewBag.Tierate%</p>
+    </div>
+    </div>
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <th>Escolha</th>
+                <th>Dado Jogador</th>
+                <th>Dado da Banca</th>
+                <th>Resultado</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var info in Model)
+            {
+                @if (info.Aposta != null)
+                {
+                    <tr>
+                        <td>@info.Aposta</td>
+                        <td>@info.Dado1dojogador + @info.Dado2dojogador = @(info.Dado1dojogador + info.Dado2dojogador)</td>
+                        <td>@info.Dado1dabanca + @info.Dado2dabanca = @(info.Dado1dabanca + info.Dado2dabanca)</td>
+                        <td>@info.Resultado</td>                        
+                        <td>@info.Status</td>
+                </tr>
+                }
+            }                        
+        </tbody>
+    </table>
+
+}

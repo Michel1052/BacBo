@@ -1,0 +1,52 @@
+﻿@model List<BacBo.Models.Bet>
+
+@{
+    ViewData["Title"] = "Bac Bo";
+}
+
+<style>
+
+    table th:nth-child(n+2),
+    table td:nth-child(n+2) {
+        padding-left: 30px; /* or whatever spacing you need */
+    }
+
+</style>
+
+<h1>Bac Bo</h1>
+
+<form method="post" asp-action="Play">
+    <p>Faça sua aposta:</p>
+    <button type="submit" name="choice" value="Player">Player</button>
+    <button type="submit" name="choice" value="Banker">Banker</button>
+    <button type="submit" name="choice" value="Tie">Tie</button>
+</form>
+
+
+@if (Model != null)
+{
+
+    <h2>Histórico de Apostas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Escolha</th>
+                <th>Dado Jogador</th>
+                <th>Dado Banqueiro</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var bet in Model)
+            {
+                <tr>
+                    <td>@bet.Choice</td>
+                    <td>@bet.PlayerDice1 + @bet.PlayerDice2 = @(bet.PlayerDice1 + bet.PlayerDice2)</td>
+                    <td>@bet.BankerDice1 + @bet.BankerDice2 = @(bet.BankerDice1 + bet.BankerDice2)</td>
+                    <td>@bet.Result</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
