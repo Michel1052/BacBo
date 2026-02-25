@@ -72,7 +72,7 @@ namespace BacBo.Controllers
 
             if(choice == result)
             {
-                adm.Status = "Vitória";
+                adm.Status = "VitÃ³ria";
             }
 
             else
@@ -81,26 +81,17 @@ namespace BacBo.Controllers
             }
 
 
-                //string jsonBets = HttpContext.Session.GetString("betHistory");
+                
 
-                List<Bet> betList = new List<Bet>();
+            List<Bet> betList = new List<Bet>();
 
-            /*if (!string.IsNullOrEmpty(jsonBets))
-            {
-                betList = JsonSerializer.Deserialize<List<Bet>>(jsonBets);
-            }
-            else
-            {
-                betList = new List<Bet>();
-            }*/
+           
 
             
             betList.Add(bet);
 
             
-            //jsonBets = JsonSerializer.Serialize(betList);
-            //HttpContext.Session.SetString("betHistory", jsonBets);
-
+            
             PainelADM(adm);
 
             return View("BacBo", betList);
@@ -159,7 +150,7 @@ namespace BacBo.Controllers
 
             foreach (var bet in betList)
             {
-                if(bet.Status == "Vitória")
+                if(bet.Status == "VitÃ³ria")
                 {
                     vit++;
                 }
@@ -220,7 +211,7 @@ namespace BacBo.Controllers
 
         public IActionResult Resultados(string resultado)
         {
-            string voce = "Você";
+            string voce = "VocÃª";
             string banca = "Banca";
 
             var adm = new PainelADM();
@@ -228,12 +219,12 @@ namespace BacBo.Controllers
             if (resultado == "Player")
             {
                 
-                adm.Status = "Vitória";
+                adm.Status = "VitÃ³ria";
             }
 
             if (resultado == "Player")
             {
-                adm.Status = "Vitória";
+                adm.Status = "VitÃ³ria";
             }            
 
             return View();
