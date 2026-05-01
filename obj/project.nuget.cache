@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nEUHZBc4iSk=",
+  "dgSpecHash": "mJuopivsr3Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\miche\\source\\repos\\BacBo\\BacBo\\BacBo.csproj",
+  "projectFilePath": "C:\\Users\\miche\\Documents\\bacbo\\BacBo\\BacBo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\8.0.0\\microsoft.aspnetcore.mvc.razor.runtimecompilation.8.0.0.nupkg.sha512",

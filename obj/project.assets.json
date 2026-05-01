@@ -941,11 +941,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\miche\\source\\repos\\BacBo\\BacBo\\BacBo.csproj",
+      "projectUniqueName": "C:\\Users\\miche\\Documents\\bacbo\\BacBo\\BacBo.csproj",
       "projectName": "BacBo",
-      "projectPath": "C:\\Users\\miche\\source\\repos\\BacBo\\BacBo\\BacBo.csproj",
+      "projectPath": "C:\\Users\\miche\\Documents\\bacbo\\BacBo\\BacBo.csproj",
       "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\miche\\source\\repos\\BacBo\\BacBo\\obj\\",
+      "outputPath": "C:\\Users\\miche\\Documents\\bacbo\\BacBo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

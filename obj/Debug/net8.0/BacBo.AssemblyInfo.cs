@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BacBo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5c3ce9c36e0ded432c8be0918613597c6978897")]
 [assembly: System.Reflection.AssemblyProductAttribute("BacBo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BacBo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
